@@ -1,7 +1,9 @@
 package json_model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Data;
 
+@Data
 public class Company{
 
 	@JsonProperty("bs")
@@ -13,15 +15,4 @@ public class Company{
 	@JsonProperty("name")
 	private String name;
 
-	public String getBs(){
-		return bs;
-	}
-
-	public String getCatchPhrase(){
-		return catchPhrase;
-	}
-
-	public String getName(){
-		return name;
-	}
 }

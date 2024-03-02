@@ -1,7 +1,9 @@
 package json_model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Data;
 
+@Data
 public class Geo{
 
 	@JsonProperty("lng")
@@ -10,11 +12,4 @@ public class Geo{
 	@JsonProperty("lat")
 	private String lat;
 
-	public String getLng(){
-		return lng;
-	}
-
-	public String getLat(){
-		return lat;
-	}
 }

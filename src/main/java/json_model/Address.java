@@ -1,7 +1,9 @@
 package json_model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Data;
 
+@Data
 public class Address{
 
 	@JsonProperty("zipcode")
@@ -19,23 +21,4 @@ public class Address{
 	@JsonProperty("street")
 	private String street;
 
-	public String getZipcode(){
-		return zipcode;
-	}
-
-	public Geo getGeo(){
-		return geo;
-	}
-
-	public String getSuite(){
-		return suite;
-	}
-
-	public String getCity(){
-		return city;
-	}
-
-	public String getStreet(){
-		return street;
-	}
 }
